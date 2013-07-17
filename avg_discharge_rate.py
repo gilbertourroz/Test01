@@ -1,5 +1,7 @@
 """Determine the average discharge rate of each station in a data file
 
+Usage: python avg_discharge_rate.py [input_file]
+
 Input file format:
 
 2013-03-22 A 127
@@ -35,8 +37,10 @@ def main():
     avg_discharge_rates = get_avg_discharge_rates(data)
     for station in avg_discharge_rates:
         print(station + ' ' +  str(avg_discharge_rates[station]))
-# if this script is executed from the command line
-# run the main() function;
-# if it's imported into another file, don't
-if __name__ == '__main__':
+
+# if this script is executed from the command line.
+# run the main () function;
+# if it;s imported into another file, don't
+
+		if __name__ == '__main__':
     main()
